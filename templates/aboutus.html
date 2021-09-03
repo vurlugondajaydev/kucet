@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KUCET</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@800&family=Baloo+Bhaina+2:wght@800&display=swap" rel="stylesheet">
+</head>
+<style>
+    body
+    {
+        font-family: 'Baloo Bhai 2', cursive;
+        background-image: url('/static/bg.jpg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .left{
+        position: absolute;
+        left:20px;
+        top: 40px;
+        display: inline-block;
+    }
+    .left img{
+        width: 100px;
+    }
+    .mid{
+       display: block;
+       width: 30%;
+       margin:40px auto ;
+       
+    }
+    .right{
+        position: absolute;
+        right: 20px;
+        top: 40px;
+       display: inline-block;
+       text-decoration: none;
+      
+    }
+    .btn{
+      font-family: 'Baloo Bhai 2', cursive;
+      margin:auto;
+      background-color: gray;
+      color:rgb(56, 3, 3);
+      border:2px solid gray;
+      border-radius: 10px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .btn:hover{
+        background-color: rgb(71, 70, 70);
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 20px;
+    }
+    .navbar li a{
+        display: inline-block;
+        color:rgb(3, 25, 34);
+        text-decoration: none;
+        padding: 20px 20px;
+    }
+    .navbar li a:hover,.navbar li a.active{
+        text-decoration: underline;
+        color:rgb(182, 135, 7) ;
+    }
+    .container{
+        border: 2px solid green;
+    }
+    .box1{
+        border : 2px solid gray;
+        width:15cm;
+        background-color: honeydew;
+        position: absolute;
+        left: 3cm;
+        top: 6cm;
+        line-height: 23px;
+    }
+    .box1{
+        position:absolute;
+        right: 5cm;
+    }
+    .aboutus{
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+</style>
+<body>
+
+    <div class="left">
+        <img src="{{url_for('static' , filename ='ku logo.jpg')}}" alt="error">
+    </div>
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="/" >Home</a></li>
+            <li><a href="{{url_for('aboutus')}}" class="active">About us</a></li>
+            <li><a href="{{url_for('contactus')}}" >Contact us</a></li>
+        </ul>   
+     </div>
+    <div class="right">
+       <ul style="list-style: none;"><li><a class="btn" href="{{url_for('year')}}"> Year </a></li></ul>
+    </div>
+    <div class="aboutus">
+        <table border="0" cellpadding="0" cellspacing="0" style="box-sizing: border-box; background-color: rgb(255, 255, 255); margin-bottom: 10px; color: rgb(0, 0, 0); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; border-radius: 5px;" width="100%">
+            <tbody style="box-sizing: border-box;">
+                <tr style="box-sizing: border-box;">
+                    <td align="left" class="bodytext12" colspan="2" style="box-sizing: border-box; padding: 0px;" valign="top">
+                        <div align="justify" style="box-sizing: border-box;"><b style="box-sizing: border-box; font-weight: 700;">A Little History</b><br style="box-sizing: border-box;"><br style="box-sizing: border-box;">It also promotes individual and collective research by the faculty and the scholars. The students of the University have the distinction of becoming active part of the HR of the corporate world.<br style="box-sizing: border-box;"><br style="box-sizing: border-box;">The University is committed to meet the augmented demand in the expansion of specialized courses form time to time, and is striving hard to provide appreciable scholastic activities to the increased number of students.<br style="box-sizing: border-box;"><br style="box-sizing: border-box;">Since its establishment in 1976 several steps were taken for the overall development of the infrastructure facilities in order to cater to the requirements of both faculty, staff, students and research scholars. The vast area of 650 acres</div>
+                    </td>
+                    <td align="right" style="box-sizing: border-box; padding: 0px;" valign="top" width="30%"><img src="https://kakatiya.ac.in/images/origin_and_history.jpg" alt="About KU" width="219" height="210" style="box-sizing: border-box; border: 0px; max-width: 100%;"></td>
+                </tr>
+                <tr style="box-sizing: border-box;">
+                    <td align="left" class="bodytext12" colspan="3" style="box-sizing: border-box; padding: 0px;" valign="top">
+                        <div align="justify" style="box-sizing: border-box;">of land is being used effectively and efficiently for the developmental activities from the available sources and funds from the UGC, State Government and other sources. The various departments on the campus are well accommodated in different buildings of their own with lawns.</div>
+                    </td>
+                </tr>
+                <tr style="box-sizing: border-box;">
+                    <td align="left" class="bodytext12" colspan="3" style="box-sizing: border-box; padding: 0px;" valign="top">
+                        <div align="justify" style="box-sizing: border-box;">They have well-ventilated classrooms with audio-video facilities, seminar halls, computer labs, and faculty rooms. The laboratories in the science departments are equipped with the ultra modern scientific instruments to accelerate effective research.<br style="box-sizing: border-box;"><br style="box-sizing: border-box;">The faculties of all the departments, with 248 teaching staff and 622 non-teaching staff, are committed to and well versed in their respective subjects. They have excelled in imparting quality education and also represented their respective departments in many National and International Seminars and brought laurels to the University for their excellent research.</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

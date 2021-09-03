@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KUCET</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@800&family=Baloo+Bhaina+2:wght@800&display=swap" rel="stylesheet">
+</head>
+<style>
+    body
+    {
+        font-family: 'Baloo Bhai 2', cursive;
+        background-image: url('/static/bg.jpg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .left{
+        position: absolute;
+        left:20px;
+        top: 40px;
+        display: inline-block;
+    }
+    .left img{
+        width: 100px;
+    }
+    .mid{
+       display: block;
+       width: 30%;
+       margin:40px auto ;
+       
+    }
+    .right{
+        position: absolute;
+        right: 20px;
+        top: 40px;
+       display: inline-block;
+       text-decoration: none;
+      
+    }
+    .btn{
+      font-family: 'Baloo Bhai 2', cursive;
+      margin:auto;
+      background-color: gray;
+      color:rgb(56, 3, 3);
+      border:2px solid gray;
+      border-radius: 10px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .btn:hover{
+        background-color: rgb(71, 70, 70);
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 20px;
+    }
+    .navbar li a{
+        display: inline-block;
+        color:rgb(3, 25, 34);
+        text-decoration: none;
+        padding: 20px 20px;
+    }
+    .navbar li a:hover,.navbar li a.active{
+        text-decoration: underline;
+        color:rgb(182, 135, 7) ;
+    }
+    .container{
+        border: 2px solid green;
+    }
+    .box1{
+        border : 2px solid gray;
+        width:15cm;
+        background-color: honeydew;
+        position: absolute;
+        left: 3cm;
+        top: 6cm;
+        line-height: 23px;
+    }
+    .box1{
+        position:absolute;
+        right: 5cm;
+    }
+    .contact{
+        position: absolute;
+        left: 445px;
+        top: 120px;
+        border:solid rgb(179, 178, 176);
+        background-color: rgb(156, 173, 173);
+    }
+    
+</style>
+<body>
+
+    <div class="left">
+        <img src="{{url_for('static' , filename ='ku logo.jpg')}}" alt="error">
+    </div>
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="/">Home</a></li>
+            <li><a href="{{url_for('aboutus')}}">About us</a></li>
+            <li><a href="{{url_for('contactus')}}" class="active">Contact us</a></li>
+        </ul>   
+     </div>
+    <div class="right">
+       <ul style="list-style: none;"><li><a class="btn" href="{{url_for('year')}}">Branch  </a></li></ul>
+    </div>
+    <div class="contact">
+        <h2>General Administartion</h2>
+        <p><big>vice chancellor </big>: vc@kakatiya.ac.in / kuvcpeshi@yahoo.co.in</p>
+        <p><big>Registor</big> :  0870-2438866, registrarkuc@gmail.com  /  registrar@kakatiya.ac.in</p>
+        <p><big>Joint Registrar</big> : 0870-2439077</p>
+        <h2>Dean,Collage development cell</h2>
+        <p><big>Contact number</big> : 0870-2461443, 2438998</p>
+        <p><big>Mail-id</big> : deancdcku@gmail.com,dean.cdc@kakatiya.ac.in</p>
+        <h2>Hostel facilities</h2>
+        <p><big>Contact number</big> : 2438600</p>
+        <h2>Library Facilities</h2>
+        <p><big>Contact number</big> : 2439099</p>
+        <p><big>Mail-id </big>: incharge.library@kakatiya.ac.in</p>
+        <h2>Assistance of the Police</h2>
+        <p><big>Contact number</big> : 2439333</p>
+        <p><big>Mail-id</big> : incharge.library@kakatiya.ac.in</p>
+        <h2>Health Services</h2>
+        <p><big>contact number</big> :2461444</p>
+    </div>
+</body>
+</html>
